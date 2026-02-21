@@ -8,7 +8,9 @@
                 "kind": "build",
                 "isDefault": true
             },
-            "command": ".vscode/build.bat",
+            "command": [
+                "dotnet build .vscode -c Debug"
+            ],
         },
         {
             "label": "BuildLinuxDLL",
@@ -17,7 +19,9 @@
                 "kind": "build",
                 "isDefault": true
             },
-            "command": ".vscode/build",
+            "command": [
+                "dotnet build .vscode -c Debug"
+            ],
         }
     ]
 }
