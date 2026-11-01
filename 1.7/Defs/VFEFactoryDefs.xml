@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<!-- <PipeSystem.ProcessDef MayRequire="vanillaexpanded.vfefactory">
+		<defName>VFEFactory_RecycleApparel</defName>
+		<label>Recycle apparel</label>
+		<labelOverride>Recycle apparel</labelOverride>
+		<description>Use mechanical blades and carding tools to break down apparel into useful resources. This operation will output 25% of the materials used to craft the apparel, excluding any components or advanced components.</description>
+		<priorityInBillList>2</priorityInBillList>
+		<spawnOnInteractionCell>true</spawnOnInteractionCell>
+		<autoGrabFromHoppers>true</autoGrabFromHoppers>
+		<autoInputSlots>
+			<li>(-2,0,2)</li>kill
+			<li>(2,0,2)</li>
+		</autoInputSlots>
+		<ticks>6400</ticks>
+		<ingredients>
+			<li>
+				<thingCategory>Apparel</thingCategory>
+				<countNeeded>1</countNeeded>
+				<ingredientIconOverride>Things/Pawn/Humanlike/Apparel/Jacket/Jacket</ingredientIconOverride>
+			</li>
+		</ingredients>
+		<results>
+			<li>
+				<thing>Leather_Patch</thing>
+				<count>1</count>
+				<workerClass>VanillaFurnitureExpandedFactory.ResultWorker_Smelt</workerClass>
+				<outputStringOverride>VFEFactory_VariableOutput</outputStringOverride>
+			</li>
+		</results>
+		<isFactoryProcess>true</isFactoryProcess>
+		<autoExtract>true</autoExtract>
+		<onlyGrabAndOutputToFactoryHoppers>true</onlyGrabAndOutputToFactoryHoppers>
+		<sustainerWhenWorking>true</sustainerWhenWorking>
+		<sustainerDef>VFEFactory_AutomatedLoomSustainer</sustainerDef>
+		<effecterWhenWorking>true</effecterWhenWorking>
+		<effecterDef>VFEFactory_Tailor</effecterDef>
+		<maxOutputCount>75</maxOutputCount>
+	</PipeSystem.ProcessDef> -->
+</Defs>

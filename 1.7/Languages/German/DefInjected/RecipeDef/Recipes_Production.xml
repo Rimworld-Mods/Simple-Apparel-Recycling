@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <NeolithicRecycleApparel.label>Einfache Bekleidung recyceln</NeolithicRecycleApparel.label>
+  <NeolithicRecycleApparel.description>Kleidung zu Rohstoffen recyceln.</NeolithicRecycleApparel.description>
+  <NeolithicRecycleApparel.jobString>Bekleidung-Recycling.</NeolithicRecycleApparel.jobString>
+
+  <SimpleRecycleApparel.label>Kleidung recyceln</SimpleRecycleApparel.label>
+  <SimpleRecycleApparel.description>Kleidung zu Rohstoffen recyceln.</SimpleRecycleApparel.description>
+  <SimpleRecycleApparel.jobString>Bekleidung-Recycling.</SimpleRecycleApparel.jobString>
+
+</LanguageData>

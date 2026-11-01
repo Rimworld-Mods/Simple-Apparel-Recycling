@@ -36,12 +36,20 @@ namespace AVSR
         public static void Postfix(ref RecipeDef recipeDef, ref List<Thing> ingredients, ref IEnumerable<Thing> __result)
         {
             string name = recipeDef.defName;
-            if(name == "SimpleRecycleApparel" || name == "NeolithicRecycleApparel"){
-                Thing apparel = ingredients.First();
-                if(apparel == null || apparel.Smeltable) return; // if apparel is smeltable - do nothing, smelt functionionality will return materials
-                __result = Recycle(apparel);
+            string[] recycleDefs = {
+                "SimpleRecycleApparel",
+                "NeolithicRecycleApparel",
+                "BulkRecycleApparel",
+            };
+            if(recycleDefs.Contains(name)){
+                foreach(Thing apparel in ingredients){
+                    // if apparel is smeltable - do nothing, smelt functionionality will return materials
+                    if(apparel == null || apparel.Smeltable) continue;
+                    __result = __result.Concat(Recycle(apparel));
+                }
             }
         }
 
+        // TODO: Create Process.GetThingsAndContainedItems harmony patch (after) and filter smeltable items further for VFEFactory
     }
 }
